@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#a97831">
+<meta name="description" content="Shalom Home Care Adult Family Home in Lake Stevens, Washington. Compassionate, personalized care in a welcoming home.">
+
+<title>Shalom Home Care | Compassionate Care</title>
+
+<style>
+:root {
+  --gold: #a97831;
+  --gold-dark: #76501f;
+  --gold-light: #ead7ad;
+  --cream: #fbf7ef;
+  --cream-dark: #f2e8d5;
+  --white: #fffdf8;
+  --text: #302b22;
+  --muted: #70675a;
+  --border: #e4d7bf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0 18px;
+}
+
+p {
+  color: var(--muted);
+}
+
+.topbar {
+  background: var(--gold-dark);
+  color: white;
+  padding: 9px 0;
+  font-size: 13px;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topbar p, .topbar a {
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(251,247,239,.97);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  background: linear-gradient(145deg, #c89c52, #865a25);
+  color: white;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px 16px 16px 4px;
+  font-size: 26px;
+}
+
+.logo strong {
+  display: block;
+  font: bold 23px Georgia, serif;
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: white;
+}
+
+.btn-outline {
+  color: var(--gold-dark);
+  background: var(--white);
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  padding: 8px 13px;
+  border-radius: 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.eyebrow {
+  color: var(--gold-dark);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 55px 0 75px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5.5vw, 70px);
+  margin: 18px 0;
+}
+
+.hero h1 em {
+  color: var(--gold);
+  font-weight: normal;
+}
+
+.hero p {
+  font-size: 17px;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  height: 490px;
+  border-radius: 42% 42% 20px 20px;
+  box-shadow: 0 18px 45px #46351d22;
+}
+
+.photo-note {
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  background: var(--white);
+  padding: 18px;
+  max-width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px #0002;
+}
+
+.photo-note strong {
+  display: block;
+  color: var(--gold-dark);
+  font: bold 19px Georgia, serif;
+}
+
+.photo-note p {
+  font-size: 13px;
+}
+
+.trust {
+  background: var(--cream-dark);
+  border-block: 1px solid var(--border);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-item {
+  padding: 24px 12px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.trust-item:last-child {
+  border-right: 0;
+}
+
+.trust-item .icon {
+  font-size: 27px;
+  color: var(--gold-dark);
+}
+
+.trust-item strong {
+  display: block;
+}
+
+.trust-item p {
+  font-size: 13px;
+}
+
+section {
+  padding: 85px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.section-heading p {
+  max-width: 650px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  height: 440px;
+  border-radius: 20px;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--gold-dark);
+  font-weight: bold;
+}
+
+.about-copy p {
+  margin-bottom: 15px;
+}
+
+.quote {
+  margin-top: 25px;
+  padding: 18px;
+  background: var(--cream-dark);
+  border-left: 4px solid var(--gold);
+  font: 18px Georgia, serif;
+}
+
+.services {
+  background: var(--white);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 25px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  transition: .2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #46351d12;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--gold-light);
+  color: var(--gold-dark);
+  font-size: 25px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin: 16px 0 9px;
+}
+
+.service-card p {
+  font-size: 14px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 17px;
+}
+
+.home-card img {
+  height: 155px;
+}
+
+.home-card div {
+  padding: 12px 14px 12px 0;
+}
+
+.home-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.home-card p {
+  font-size: 13px;
+}
+
+.gallery-section {
+  background: var(--cream-dark);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  cursor: zoom-in;
+  text-align: left;
+  color: var(--text);
+  box-shadow: 0 5px 20px #46351d12;
+}
+
+.gallery-item img {
+  aspect-ratio: 4 / 3;
+  transition: transform .3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item span {
+  display: block;
+  padding: 14px;
+  font-weight: bold;
+}
+
+.gallery-note {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.cta-section {
+  padding: 0 0 85px;
+  background: var(--cream-dark);
+}
+
+.cta-box {
+  background: linear-gradient(120deg, #76501f, #b68b43);
+  color: white;
+  padding: 42px;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.cta-box h2 {
+  margin-top: 0;
+}
+
+.cta-box p {
+  color: #fff1d8;
+}
+
+.cta-box .btn {
+  flex-shrink: 0;
+  color: var(--gold-dark);
+  background: white;
+  border-color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-details {
+  margin-top: 25px;
+}
+
+.contact-details p {
+  margin-bottom: 16px;
+}
+
+.contact-details strong {
+  color: var(--text);
+}
+
+.contact-details a {
+  color: var(--gold-dark);
+  font-weight: bold;
+}
+
+.contact-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #46351d10;
+}
+
+.contact-card h3 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+footer {
+  padding: 35px 0;
+  background: #30291e;
+  color: white;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer p {
+  color: #e1d1b6;
+  font-size: 13px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: #17140ff0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 25px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 82vh;
+  width: auto;
+  border-radius: 12px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 12px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero-grid, .about-grid, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .topbar .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    min-height: 72px;
+  }
+
+  .logo strong {
+    font-size: 19px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    padding: 22px;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero {
+    padding: 25px 0 45px;
+  }
+
+  .hero-image img {
+    height: 320px;
+    border-radius: 24px;
+  }
+
+  .photo-note {
+    left: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trust-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .trust-item:nth-child(-n+2) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  .service-grid, .gallery, .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-card {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .home-card img {
+    height: 145px;
+  }
+
+  .cta-box {
+    display: block;
+    padding: 28px;
+  }
+
+  .cta-box .btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <p>A welcoming adult family home in Lake Stevens, Washington</p>
+    <p>
+      <a href="tel:+12068833391">(206) 883-3391</a> ·
+      <a href="mailto:shalomhomecares@gmail.com">Email Us</a>
+    </p>
+  </div>
+</div>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">
+      <span class="logo-icon">✦</span>
+      <span>
+        <strong>Shalom Home Care</strong>
+        <small>Adult Family Home</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#our-home">Our Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-gold" href="#contact">Schedule a Tour</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">A safe place to call home</span>
+
+      <h1>A place where you get
+        <em>compassionate care.</em>
+      </h1>
+
+      <p>
+        Welcome to Shalom Home Care. We strive to create a secure,
+        cozy, and personalized home where residents are treated
+        with dignity, kindness, and respect.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-gold" href="#contact">Schedule a Tour →</a>
+        <a class="btn btn-outline" href="#services">Explore Our Care</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/home-exterior.png"
+        alt="Exterior of Shalom Home Care">
+
+      <div class="photo-note">
+        <strong>Care that feels like home</strong>
+        <p>A warm, supportive environment for residents and their loved ones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <div class="icon">♡</div>
+      <strong>Personalized Care</strong>
+      <p>Support for individual needs</p>
+    </div>
+
+    <div class="trust-item">
+      <div class="icon">⌂</div>
+      <strong>Home-Like Setting</strong>
+      <p>Comfort and belonging</p>
+    </div>
+
+    <div class="trust-item">
+      <div class="icon">✿</div>
+      <strong>Daily Comfort</strong>
+      <p>Thoughtful daily routines</p>
+    </div>
+
+    <div class="trust-item">
+      <div class="icon">♧</div>
+      <strong>Family Partnership</strong>
+      <p>Communication and trust</p>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="images/covered-porch.png"
+        alt="Covered porch with outdoor seating">
+
+      <span class="image-label">A place to feel at home</span>
+    </div>
+
+    <div class="about-copy">
+      <span class="eyebrow">Who we are</span>
+      <h2>Compassion, comfort, and community.</h2>
+
+      <p>
+        Our mission is to create a secure, cozy, and personalized
+        environment for residents. In our intimate setting,
+        compassionate caregivers work with families to understand
+        each person's needs and preferences.
+      </p>
+
+      <p>
+        We believe communication and trust matter. We welcome
+        families to learn about our home, ask questions, and explore
+        whether our environment is the right fit for their loved one.
+      </p>
+
+      <div class="quote">
+        A place where care is personal, dignity matters, and every
+        resident deserves to feel at home.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Our services</span>
+      <h2>Support with dignity and kindness.</h2>
+      <p>
+        Care is individualized to each resident's needs,
+        preferences, and care plan. Contact us to discuss
+        our current capabilities and availability.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon">♡</div>
+        <h3>Alzheimer's & Dementia Care</h3>
+        <p>Supportive routines and a respectful environment for residents living with memory-related conditions.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">♿</div>
+        <h3>Mobility Support</h3>
+        <p>Assistance with movement and mobility based on individual needs and care plans.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">✚</div>
+        <h3>Personal Care</h3>
+        <p>Respectful assistance with daily personal-care routines while encouraging independence.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">✿</div>
+        <h3>Wound & Dressing Support</h3>
+        <p>Support appropriate to the resident's care plan and staff qualifications.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⌂</div>
+        <h3>Comfort-Focused Care</h3>
+        <p>A compassionate approach that prioritizes comfort, dignity, and family communication.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">＋</div>
+        <h3>Diabetes Care Support</h3>
+        <p>Support according to individual care plans, staff training, and authorized capabilities.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="our-home">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Explore our home</span>
+      <h2>Comfort in the details.</h2>
+      <p>Explore the spaces where residents can rest, gather, and enjoy the comforts of home.</p>
+    </div>
+
+    <div class="home-grid">
+      <article class="home-card">
+        <img src="images/resident-bedroom.png" alt="Resident bedroom" loading="lazy">
+        <div>
+          <h3>Resident Rooms</h3>
+          <p>A quiet, personal space designed for rest and comfort.</p>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <img src="images/kitchen.png" alt="Home kitchen" loading="lazy">
+        <div>
+          <h3>Kitchen & Meals</h3>
+          <p>A home-style kitchen at the heart of daily living.</p>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <img src="images/dining-living-area.png" alt="Dining and living area" loading="lazy">
+        <div>
+          <h3>Shared Living Areas</h3>
+          <p>Welcoming spaces for relaxing and spending time together.</p>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <img src="images/accessible-bathroom.png" alt="Bathroom with accessibility features" loading="lazy">
+        <div>
+          <h3>Accessibility Features</h3>
+          <p>Safety features that can support mobility and daily routines.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Photo tour</span>
+      <h2>Take a look around.</h2>
+      <p>
+        Explore Shalom Home Care through photos of our rooms,
+        common areas, bathrooms, and outdoor spaces.
+      </p>
+    </div>
+
+    <div class="gallery">
+
+      <button class="gallery-item" data-image="home-exterior.png" data-caption="Home Exterior">
+        <img src="images/home-exterior.png" alt="Home exterior" loading="lazy">
+        <span>Home Exterior</span>
+      </button>
+
+      <button class="gallery-item" data-image="covered-porch.png" data-caption="Covered Porch">
+        <img src="images/covered-porch.png" alt="Covered porch" loading="lazy">
+        <span>Covered Porch</span>
+      </button>
+
+      <button class="gallery-item" data-image="accessible-shower.png" data-caption="Accessible Shower">
+        <img src="images/accessible-shower.png" alt="Accessible shower" loading="lazy">
+        <span>Accessible Shower</span>
+      </button>
+
+      <button class="gallery-item" data-image="accessible-bathroom.png" data-caption="Accessible Bathroom">
+        <img src="images/accessible-bathroom.png" alt="Accessible bathroom" loading="lazy">
+        <span>Accessible Bathroom</span>
+      </button>
+
+      <button class="gallery-item" data-image="shower-room.png" data-caption="Shower Room">
+        <img src="images/shower-room.png" alt="Shower room" loading="lazy">
+        <span>Shower Room</span>
+      </button>
+
+      <button class="gallery-item" data-image="kitchen.png" data-caption="Kitchen">
+        <img src="images/kitchen.png" alt="Kitchen" loading="lazy">
+        <span>Kitchen</span>
+      </button>
+
+      <button class="gallery-item" data-image="dining-living-area.png" data-caption="Dining and Living Area">
+        <img src="images/dining-living-area.png" alt="Dining and living area" loading="lazy">
+        <span>Dining and Living Area</span>
+      </button>
+
+      <button class="gallery-item" data-image="resident-bedroom.png" data-caption="Resident Bedroom">
+        <img src="images/resident-bedroom.png" alt="Resident bedroom" loading="lazy">
+        <span>Resident Bedroom</span>
+      </button>
+
+      <button class="gallery-item" data-image="hallway.png" data-caption="Hallway">
+        <img src="images/hallway.png" alt="Home hallway" loading="lazy">
+        <span>Hallway</span>
+      </button>
+
+      <button class="gallery-item" data-image="living-room-edited.png" data-caption="Living Room">
+        <img src="images/living-room-edited.png" alt="Living room" loading="lazy">
+        <span>Living Room</span>
+      </button>
+
+      <button class="gallery-item" data-image="living-room.png" data-caption="Shared Living Room">
+        <img src="images/living-room.png" alt="Shared living room" loading="lazy">
+        <span>Shared Living Room</span>
+      </button>
+
+      <button class="gallery-item" data-image="home-garden.png" data-caption="Home and Garden">
+        <img src="images/home-garden.png" alt="Home and garden" loading="lazy">
+        <span>Home and Garden</span>
+      </button>
+
+    </div>
+
+    <p class="gallery-note">
+      Select any photo to view it larger. Contact us to arrange an in-person tour.
+    </p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-box">
+    <div>
+      <h2>Come see if Shalom feels like home.</h2>
+      <p>We would be glad to welcome you for a tour and answer your questions.</p>
+    </div>
+    <a class="btn" href="#contact">Arrange a Tour →</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let's talk about care.</h2>
+
+      <p>
+        Reach out to ask a question, discuss your family's needs,
+        or arrange a visit. We look forward to hearing from you.
+      </p>
+
+      <div class="contact-details">
+        <p><strong>Phone</strong><br>
+          <a href="tel:+12068833391">(206) 883-3391</a>
+        </p>
+
+        <p><strong>Email</strong><br>
+          <a href="mailto:shalomhomecares@gmail.com">shalomhomecares@gmail.com</a>
+        </p>
+
+        <p><strong>Address</strong><br>
+          219 81st Ave NE, Lake Stevens, WA 98258
+        </p>
+
+        <p><strong>Website</strong><br>
+          <a href="https://shalomhomecares.com">shalomhomecares.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3>We'd love to welcome you.</h3>
+      <p>
+        Call or email us to discuss availability, learn about our
+        home, and schedule a tour.
+      </p>
+
+      <div class="contact-buttons">
+        <a class="btn btn-gold" href="tel:+12068833391">☎ Call Shalom</a>
+        <a class="btn btn-outline"
+          href="mailto:shalomhomecares@gmail.com?subject=Shalom%20Home%20Care%20Tour%20Inquiry">
+          ✉ Email Us
+        </a>
+      </div>
+
+      <p style="font-size:13px;margin-top:20px">
+        Please do not send sensitive medical details through ordinary email.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <div class="logo">
+      <span class="logo-icon">✦</span>
+      <span>
+        <strong style="color:white">Shalom Home Care</strong>
+        <small style="color:#e1d1b6">Adult Family Home</small>
+      </span>
+    </div>
+
+    <p>
+      © <span id="year"></span> Shalom Home Care.
+      All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded photo">
+  <button class="lightbox-close" id="closeLightbox" aria-label="Close photo">×</button>
+  <img id="lightboxImage" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+
+document.querySelectorAll(".gallery-item").forEach(item => {
+  item.addEventListener("click", () => {
+    lightboxImage.src = "images/" + item.dataset.image;
+    lightboxImage.alt = item.dataset.caption;
+    lightboxCaption.textContent = item.dataset.caption;
+    lightbox.classList.add("open");
+    document.getElementById("closeLightbox").focus();
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxImage.src = "";
+}
+
+document.getElementById("closeLightbox")
+  .addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", event => {
+  if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeLightbox();
+});
+</script>
+
+</body>
+          </html>
